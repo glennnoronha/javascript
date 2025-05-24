@@ -1,21 +1,33 @@
 :root {
   /* Primary Colors */
-  --primary: #3b82f6; /* Bright blue */
-  --primary-dark: #60a5fa; /* Lighter blue for hover states */
-  --primary-light: #1e3a8a; /* Dark blue for backgrounds */
+  --primary: #3b82f6;
+  /* Bright blue */
+  --primary-dark: #60a5fa;
+  /* Lighter blue for hover states */
+  --primary-light: #1e3a8a;
+  /* Dark blue for backgrounds */
 
   /* Neutral Colors */
-  --neutral-100: #1f2937; /* Dark background */
-  --neutral-200: #374151; /* Slightly lighter background */
-  --neutral-300: #4b5563; /* Border color */
-  --neutral-400: #9ca3af; /* Muted text */
-  --neutral-500: #d1d5db; /* Secondary text */
-  --neutral-900: #f3f4f6; /* Main text */
+  --neutral-100: #1f2937;
+  /* Dark background */
+  --neutral-200: #374151;
+  /* Slightly lighter background */
+  --neutral-300: #4b5563;
+  /* Border color */
+  --neutral-400: #9ca3af;
+  /* Muted text */
+  --neutral-500: #d1d5db;
+  /* Secondary text */
+  --neutral-900: #f3f4f6;
+  /* Main text */
 
   /* Accent Colors */
-  --accent-green: #059669; /* Success states */
-  --accent-red: #dc2626; /* Error states */
-  --accent-yellow: #d97706; /* Warning states */
+  --accent-green: #059669;
+  /* Success states */
+  --accent-red: #dc2626;
+  /* Error states */
+  --accent-yellow: #d97706;
+  /* Warning states */
 }
 
 /* Modern Typography */
@@ -38,19 +50,17 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   transition: background-color 0.3s ease, color 0.3s ease;
-  background: linear-gradient(
-    to bottom right,
-    var(--neutral-100),
-    var(--neutral-200)
-  );
+  background: linear-gradient(to bottom right,
+      var(--neutral-100),
+      var(--neutral-200));
   min-height: 100vh;
 }
 
-/* Typography */
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  margin-top: 1rem;;
   color: var(--neutral-900);
 }
 
@@ -68,16 +78,43 @@ p {
 }
 
 /* Navigation and Links */
+nav {
+  background-color: var(--primary-dark);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+nav:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 3px solid var(--primary-dark);
+}
+
+nav a {
+  font-weight: bold;
+  color: var(--primary-light);
+  font-size: 15px;
+  padding: 0.5rem 3rem;
+
+}
+
+nav a:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
 a {
-  color: var(--primary);
+  color: var(--primary-dark);
   text-decoration: none;
   transition: color 0.2s ease;
   text-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+  font-size: 1.25em;
 }
 
+
 a:hover {
-  color: var(--primary-dark);
-  transform: translateY(-1px);
+  color: paleturquoise;
+
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
@@ -91,13 +128,14 @@ ul {
 li {
   margin-bottom: 0.25rem;
 }
-ol{
+
+ol {
   padding-left: 1.25em;
 }
 
 /* Sections */
 section {
-  background-color: var(--neutral-200);
+  background-color: var(--primary-light);
   border-radius: 8px;
   padding: 1rem;
   padding-top: 0rem;
@@ -174,9 +212,21 @@ textarea:focus {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  
+  nav{
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    text-align: center;
+  }
+
+  nav a{
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+  }
 
   h1 {
+    text-align: center;
     font-size: 2rem;
   }
 
@@ -185,6 +235,7 @@ textarea:focus {
   }
 
   section {
+    text-align: center;
     padding: 1rem;
   }
 }

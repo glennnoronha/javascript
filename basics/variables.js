@@ -18,3 +18,4 @@ document.getElementById('myFullName').textContent = `My name is: ${fullName}`;
 document.getElementById('country').textContent = `I am from: ${country}`;
 document.getElementById('birthYear').textContent = `I was born in: ${birthYear}`;
 document.getElementById('student').textContent = `I am a student: ${student}`;
+
