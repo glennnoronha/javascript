@@ -1,0 +1,187 @@
+:root {
+  /* Primary Colors */
+  --primary: #3b82f6; /* Bright blue */
+  --primary-dark: #60a5fa; /* Lighter blue for hover states */
+  --primary-light: #1e3a8a; /* Dark blue for backgrounds */
+
+  /* Neutral Colors */
+  --neutral-100: #1f2937; /* Dark background */
+  --neutral-200: #374151; /* Slightly lighter background */
+  --neutral-300: #4b5563; /* Border color */
+  --neutral-400: #9ca3af; /* Muted text */
+  --neutral-500: #d1d5db; /* Secondary text */
+  --neutral-900: #f3f4f6; /* Main text */
+
+  /* Accent Colors */
+  --accent-green: #059669; /* Success states */
+  --accent-red: #dc2626; /* Error states */
+  --accent-yellow: #d97706; /* Warning states */
+}
+
+/* Modern Typography */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  line-height: 1.25;
+  color: var(--neutral-900);
+  background-color: var(--neutral-100);
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background: linear-gradient(
+    to bottom right,
+    var(--neutral-100),
+    var(--neutral-200)
+  );
+  min-height: 100vh;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--neutral-900);
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding-top: 0rem;
+  color: var(--neutral-900);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--neutral-500);
+}
+
+/* Navigation and Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+a:hover {
+  color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+/* Sections */
+section {
+  background-color: var(--neutral-200);
+  border-radius: 8px;
+  padding: 1rem;
+  padding-top: 0rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+section:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+/* Code Blocks */
+pre,
+code {
+  font-family: "Fira Code", "Consolas", monospace;
+  background-color: var(--neutral-200);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--accent-green);
+  font-weight: bold;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.console-image {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary);
+  color: var(--neutral-100);
+  border: 1px solid var(--primary-light);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+/* Form Elements */
+input,
+textarea {
+  background-color: var(--neutral-100);
+  border: 1px solid var(--neutral-300);
+  color: var(--neutral-500);
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-family: inherit;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary-light);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
