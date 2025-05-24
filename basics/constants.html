@@ -1,9 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Constants</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Type Conversion</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <h1>Constants</h1>
+  <h2>Declaring a Constant</h2>
+  <p>To declare a constant you can use <code>const</code>:</p>
+  <pre class="code">
+const PI = 3.14159;
+console.log(PI);</pre>
+  <img class="console-image" src="../images/console19.png">
+
+  <p>Let's try changing the value of <code>PI</code>:</p>
+  <pre class="code">
+PI = 3.14;
+console.log(PI); </pre>
+  <img class="console-image" src="../images/console20.png">
+  
+  <h2>Circumference Calculator</h2>
+  <p>Let's use what we have learned so far to make a simple circumference calculator</p>
+  <p>Enter the radius of a circle (cm): </p>
+  <label>Radius:</label>
+  <input id="myText" type="text">
+  <button id="mySubmit">Submit</button>
+  <h3 id="circ"></h3>
+
+  <button id="showSolution">Show Solution</button>
+  <pre id="solutionCode" class="code" style="display: none;"></pre><br><br>
+
+  <h2>Constant Objects</h2>
+  <p>You can use <code>const</code> with objects too:</p>
+  <pre class="code">
+const person = {
+  name: "Glenn",
+  age: 22
+};
+console.log(person);</pre>
+  <img class="console-image" src="../images/console21.png">
+
+  <p>You can change properties of a <code>const</code> object:</p>
+  <pre class="code">
+person.age = 23;
+console.log(person);</pre>
+  <img class="console-image" src="../images/console22.png">
+
+  <p>But you can’t reassign the object itself:</p>
+  <pre class="code">
+// person = { name: "John" }; // Error
+</pre>
+  <img class="console-image" src="../images/console23.png">
+
+  <script src="constants.js"></script>
+</body>
+
 </html>

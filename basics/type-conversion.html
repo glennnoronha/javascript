@@ -1,9 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Type Conversion</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Type Conversion</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <h1>Type Conversion</h1>
+
+  <p>Start with a number and check its type with <code>typeof</code>:</p>
+  <pre class="code">
+let battingAvg = 0.333;
+console.log(typeof battingAvg);</pre>
+  <img class="console-image" src="../images/console10.png">
+
+  <p>Convert the number to a string:</p>
+  <pre class="code">
+battingAvg = String(battingAvg);
+console.log(typeof battingAvg);</pre>
+  <img class="console-image" src="../images/console11.png">
+
+  <p>Convert the string to a boolean:</p>
+  <pre class="code">
+battingAvg = Boolean(battingAvg);
+console.log(typeof battingAvg);</pre>
+  <img class="console-image" src="../images/console12.png">
+
+  <p>Converting a string to a number that isn't numeric results in NaN:</p>
+  <pre class="code">
+let food = 'pizza';
+console.log(food, typeof food);
+
+food = Number(food);
+console.log(food, typeof food);</pre>
+  <img class="console-image" src="../images/console13.png">
+
+  <h2>Optional Conversions</h2>
+
+  <p>Use <code>parseInt()</code> and <code>parseFloat()</code> to extract numbers from strings:</p>
+  <pre class="code">
+let score = "123.45";
+console.log(parseInt(score), typeof parseInt(score));
+console.log(parseFloat(score), typeof parseFloat(score));</pre>
+  <img class="console-image" src="../images/console14.png">
+
+  <p>Falsy values like 0, empty string, null, and undefined convert to <code>false</code>:</p>
+  <pre class="code">
+console.log(Boolean(0));         
+console.log(Boolean(""));        
+console.log(Boolean(null));      
+console.log(Boolean(undefined));</pre>
+  <img class="console-image" src="../images/console15.png">
+
+  <p>Converting <code>null</code> gives 0, but <code>undefined</code> gives NaN:</p>
+  <pre class="code">
+console.log(Number(null));
+console.log(Number(undefined));</pre>
+  <img class="console-image" src="../images/console16.png">
+
+  <p>JavaScript sometimes converts types automatically (implicit conversion):</p>
+  <pre class="code">
+console.log("5" * 2);   // 10
+console.log("10" + 1);  // "101"</pre>
+  <img class="console-image" src="../images/console17.png">
+
+  <p>You can also use <code>toString()</code> to convert a number to a string:</p>
+  <pre class="code">
+let num = 42;
+console.log(num.toString(), typeof num.toString());</pre>
+  <img class="console-image" src="../images/console18.png">
+
+  <script src="type-conversion.js"></script>
+</body>
+
 </html>

@@ -3,7 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arithmetic Operators</title>
+    <title>Variables</title>
+    <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Arithmetic Operators</h1>
+    
+    <h2>Updating a variable using arithmetic operations</h2>
+    <pre class="code">
+let num = 30;
+num = num + 1;
+console.log(num);
+num = num - 1;
+console.log(num);
+num = num * 2;
+console.log(num);
+num = num / 2;
+console.log(num);
+num = num % 2;
+console.log(num);</pre>
+    <img class="console-image" src="../images/console5.png">
+
+    <p>You can also update variables quicker like this</p>
+    <pre class="code">
+num = 30;
+console.log(num);
+num += 1;
+console.log(num);
+num -= 1;
+console.log(num);
+num *= 2;
+console.log(num);
+num /= 2;
+console.log(num);
+num %= 2;
+console.log(num);</pre>
+    <img class="console-image" src="../images/console6.png">
+
+    <h2>Operator Precedence</h2>
+    <ol>
+      <li>parentheses ()</li>
+      <li>exponents (**)</li>
+      <li>multiplication & division & modulo (* / %)</li>
+      <li>addition & subtraction (+ -)</li>
+    </ol>
+    <pre class="code">
+let result = 1 + 2 * 3 + 4 ** 2;
+console.log(result);</pre>
+    <img class="console-image" src="../images/console7.png">
+    
+    <script src="operators.js"></script>
+  </body>
 </html>

@@ -3,7 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Input</title>
+    <title>Variables</title>
+    <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>User Input</h1>
+    
+    <h2>Easy Way: window prompt</h2>
+    <pre class="code">
+let username = window.prompt('What is your username?');
+console.log(username);</pre>
+    <img class="console-image" src="../images/console8.png">
+    <img class="console-image" src="../images/console9.png">
+
+    <h2 id="myH2">Profesessional Way: HTML textbox</h2>
+    <p>HTML code:</p>
+    <pre class="code">
+&lt;h2 id="myH2"&gt;Profesessional Way: HTML textbox&lt;/h2&gt;
+&lt;label&gt;Username:&lt;/label&gt;
+&lt;input id="myText" type="text"&gt;
+&lt;button id="mySubmit"&gt;Submit&lt;/button&gt;&lt;br&gt;
+</pre>
+    <p>JavaScript code:</p>
+    <pre class="code">
+let username;
+
+document.getElementById('mySubmit').onclick = function() {
+    username = document.getElementById('myText').value;
+    console.log(username);
+    document.getElementById('myH2').textContent = `Hello, ${username}`
+}
+</pre>
+    <p>When we click submit, the username is logged to the console, and we modify the text of the h2 element</p>
+    <label>Username:</label>
+    <input id="myText" type="text">
+    <button id="mySubmit">Submit</button><br>
+    
+    <script src="input.js"></script>
+  </body>
 </html>
