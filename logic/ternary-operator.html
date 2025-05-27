@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ternary Operators</title>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+    <header
+        style="background-color: var(--primary-light); color: var(--neutral-900); padding: 1rem; text-align: center;">
+        <h1 style="margin: 0;">JavaScript Essentials</h1>
+        <p style="margin: 0;">Explore core JavaScript concepts</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">HOME</a>
+    </nav>
+
+    <h1>Ternary Operators</h1>
+    <p>Take a look at this block of code:</p>
+    <pre class="code">
+let age = 21;
+let message;
+
+if (age >= 18) { message = "You are an adult";}
+else { message = "You are not an adult"}
+
+console.log(message);
+    </pre>
+    <img class="console-image" src="../images/console32.png">
+    <p>As programmers, we want to avoid rewriting code. This is why ternary operators exist. We can write the above code much faster using ternary operators:</p>
+    <pre class="code">
+let message2 = age >= 18 ? "You're an adult" : "You're not an adult";
+console.log(message2);  
+    </pre>
+    <img class="console-image" src="../images/console33.png">
+
+    <p>Here's a ternary operator with more than 2 conditions</p>
+    <pre class="code">
+age = 15;
+message = age >= 65 ? "You're a senior" :
+        age >= 18 ? "You're an adult" :
+        "You're a minor";
+
+console.log(message); 
+    </pre>
+    <img class="console-image" src="../images/console34.png">
+
+
+    <script src="ternary-operator.js"></script>
+</body>
+
+</html>

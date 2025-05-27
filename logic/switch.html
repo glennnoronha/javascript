@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switches</title>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+    <header
+        style="background-color: var(--primary-light); color: var(--neutral-900); padding: 1rem; text-align: center;">
+        <h1 style="margin: 0;">JavaScript Essentials</h1>
+        <p style="margin: 0;">Explore core JavaScript concepts</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">HOME</a>
+    </nav>
+
+    <h1>Switches</h1>
+    <p>Instead of using many if else statements, we can use a <code>switch</code></p>
+    <pre class="code">
+let day = 3;
+
+switch (day) {
+    case 1:
+        console.log("It is monday");
+        break;
+    case 2:
+        console.log("It is tuesday");
+        break;
+    case 3:
+        console.log("It is wednesday");
+        break;
+    case 4:
+        console.log("It is thursday");
+        break;
+    case 5:
+        console.log("It is friday");
+        break;
+    case 6:
+        console.log("It is saturday");
+        break;
+    case 7:
+        console.log("It is sunday");
+        break;
+    default:
+        console.log(`${day} is not a day`)
+}
+    </pre>
+    <img class="console-image" src="../images/console35.png">
+    <p>You might have not noticed that at the end of the switch statement we have <code>default:</code>. This makes sure that if the day is not in onen of the cases, something will still be outputted</p>
+    <p>Let's change the <code>day</code> value to 8 and see the output: </p>
+    <pre class="code">
+let day = 3;
+
+switch (day) {
+    case 1:
+        console.log("It is monday");
+        break;
+    case 2:
+        console.log("It is tuesday");
+        break;
+    case 3:
+        console.log("It is wednesday");
+        break;
+    case 4:
+        console.log("It is thursday");
+        break;
+    case 5:
+        console.log("It is friday");
+        break;
+    case 6:
+        console.log("It is saturday");
+        break;
+    case 7:
+        console.log("It is sunday");
+        break;
+    default:
+        console.log(`${day} is not a day`)
+}
+    </pre>
+    <p>Here is the output to the console:</p>
+    <img class="console-image" src="../images/console36.png">
+    <p>Here is another way to write a switch in JavaScript</p>
+    <pre class="code">
+let grade = 76;
+let letterGrade;
+
+switch (true) {
+    case grade >= 90:
+        letterGrade = 'A';
+        break;
+    case grade >= 80:
+        letterGrade = 'B';
+    case grade >= 70:
+        letterGrade = 'C';
+}
+
+console.log(letterGrade);
+    </pre>
+    <img class="console-image" src="../images/console37.png">
+    <script src="switch.js"></script>
+</body>
+
+</html>

@@ -199,7 +199,7 @@ textarea {
   border-radius: 6px;
   padding: 0.5rem;
   font-family: inherit;
-  width: 100%;
+  
   margin-bottom: 1rem;
 }
 
@@ -224,6 +224,12 @@ textarea:focus {
   display:block;
   text-align: center;
   font-size: 5em;
+}
+
+#myCheck, label {
+    display: inline-flex; /* Ensures both are on the same line */
+    align-items: center;  /* Vertically aligns the checkbox and label */
+    margin-right: 10px;    /* Adds some spacing between the checkbox and label */
 }
 
 

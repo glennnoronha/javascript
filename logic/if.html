@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>If Statements</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header style="background-color: var(--primary-light); color: var(--neutral-900); padding: 1rem; text-align: center;">
+    <h1 style="margin: 0;">JavaScript Essentials</h1>
+    <p style="margin: 0;">Explore core JavaScript concepts</p>
+  </header>
+
+  <nav>
+    <a href="../index.html">HOME</a>
+  </nav>
+  <h1>If Statements</h1>
+
+  <p>This is what an <code>if</code> statement looks like in javascript</p>
+  <pre class="code">
+let age = 22;
+
+if (age > 18) {
+    console.log("You are an adult")
+}
+  </pre>
+  <p>Since the condition is true, it will be outputted to the console</p>
+  <img class="console-image" src="../images/console29.png">
+  
+  <p>Now let's add an <code>else</code> to our if statement</p>
+  <pre class="code">
+age = 15;
+
+if (age > 18) {
+    console.log("You are an adult")
+} else {
+    console.log("You are not an adult")
+}
+  </pre>
+  <p>Since the <code>age</code> is now 15 and the if statement is false, it will now go to the else block</p>
+  <img class="console-image" src="../images/console30.png">
+ 
+  <p>You can also do else if statements in JavaScript</p>
+  <pre class="code">
+let temperature = 30;
+
+if (temperature > 30) {
+    console.log("It's hot outside.");
+} else if (temperature > 20) {
+    console.log("The weather is warm.");
+} else {
+    console.log("It's cold outside.");
+}
+  </pre>
+  <p>Since <code>temperature</code> is greater than 20, it will output the else if block</p>
+  <img class="console-image" src="../images/console31.png">
+
+  <p>You can also do nested if statements in JavaScript</p>
+  <pre class="code">
+age = 20;
+let hasTicket = true;
+
+if (age >= 18) {
+    if (hasTicket) {
+        console.log("You can enter the concert.");
+    } else {
+        console.log("You need a ticket to enter the concert.");
+    }
+} else {
+    console.log("You are too young to attend the concert.");
+}
+  </pre>
+  <p>Since <code>age</code> and <code>hasTicket</code> is <code>True</code>  will output this:</p>
+  <img class="console-image" src="../images/console31.png">
+
+  <p>Let's use our knowledge of if statements to code <a href="../mini_projects/age_input.html">this</a></p>
+
+  <script src="if.js"></script>
+</body>
+
+</html>

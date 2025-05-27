@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checked Porperties</title>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+    <header
+        style="background-color: var(--primary-light); color: var(--neutral-900); padding: 1rem; text-align: center;">
+        <h1 style="margin: 0;">JavaScript Essentials</h1>
+        <p style="margin: 0;">Explore core JavaScript concepts</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">HOME</a>
+    </nav>
+
+    <h1>Checked Porperties</h1>
+    <input type="radio" id="myVisa" name="paymentMethod">
+    <label for="myVisa">Visa</label><br>
+    <input type="radio" id="myMasterCard" name="paymentMethod">
+    <label for="myMasterCard">MasterCard</label><br>
+    <input type="radio" id="myPayPal" name="paymentMethod">
+    <label for="myPayPal">PayPal</label><br>
+    <button id="submitBtn">Submit</button>
+    <p style="padding-top: 15px;" id="paymentResult"></p>
+
+    <script src="check-property.js"></script>
+</body>
+
+</html>
