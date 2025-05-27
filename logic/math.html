@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Essentials</title>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+    <header
+        style="background-color: var(--primary-light); color: var(--neutral-900); padding: 1rem; text-align: center;">
+        <h1 style="margin: 0;">JavaScript Essentials</h1>
+        <p style="margin: 0;">Explore core JavaScript concepts</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">HOME</a>
+    </nav>
+
+    <h1>Math Object</h1>
+    <p>The Math object provides a collection of math functions and constants</p>
+    <p>We will start with getting the values for π and e</p>
+    <pre class="code">
+console.log(Math.PI);
+console.log(Math.E);</pre>
+    <img class="console-image" src="../images/console24.png">
+    <p>Now let's intitialize some variables so we can see how some of the Math functions work</p>
+    <p>HTML code</p>
+    <pre class="code">
+let x = 3.21;
+let y = 2.98;
+let z = 5.31;
+let a = 4.69;
+let b = 9;
+let c;</pre>
+    <p>Here are some of the Math functions</p>
+    <pre class=""code>
+// Round 'x' to the nearest integer
+x = Math.round(x); // Rounds 3.21 to the nearest integer (3)
+console.log(x);     
+
+// Round 'y' down to the nearest integer (floor)
+y = Math.floor(y);  // Floors 2.98 down to the nearest integer (2)
+console.log(y);      
+
+// Round 'z' up to the nearest integer (ceil)
+z = Math.ceil(z);   // Ceils 5.31 up to the nearest integer (6)
+console.log(z);      // Output: 6
+
+// Round 'a' up to the nearest integer (ceil)
+a = Math.ceil(a);   // Ceils 4.69 up to the nearest integer (5)
+console.log(a);
+    </pre>
+    <img class="console-image" src="../images/console25.png">
+    
+    <p>This is how you use sqaure root</p>
+    <pre class="code">
+b = Math.sqrt(b);
+console.log(b);
+    </pre>
+    <img class="console-image" src="../images/console26.png">
+
+    <p>This is how you use powers</p>
+    <pre class="code">
+c = Math.pow(2, 4);
+console.log(c)
+    </pre>
+    <img class="console-image" src="../images/console27.png">
+
+    <p>Generate random numbers and min and max</p>
+    <pre class="code">
+console.log(Math.random()); // Random number between 0 and 1
+console.log(Math.max(1, 2, 3, 4, 5));
+console.log(Math.min(1,2,3,4,5))
+    </pre>
+    <img class="console-image" src="../images/console28.png">
+
+    <script src="math_obj.js"></script>
+</body>
+
+</html>

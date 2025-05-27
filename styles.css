@@ -210,6 +210,23 @@ textarea:focus {
   box-shadow: 0 0 0 2px var(--primary-light);
 }
 
+#countLabel{
+  display: block;
+  text-align: center;
+  font-size: 5em;
+}
+#btnContainer{
+  margin-top: 25px;
+  text-align: center;
+}
+
+#diceLabel{
+  display:block;
+  text-align: center;
+  font-size: 5em;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   nav{
